@@ -1,0 +1,6 @@
+node_modes
+Dockerfile
+.git
+.dockerignore
+.gitignore
+.env
