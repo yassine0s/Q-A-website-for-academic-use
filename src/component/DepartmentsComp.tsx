@@ -5,62 +5,69 @@ import { useNavigate } from "react-router-dom";
 const DepartmentsComp = () => {
   const navigate = useNavigate();
 
-  const handleDepartmentClick = (id: number) => {
+  const handleDepartmentClick = (
+    name: string,
+    id: string,
+    description: string
+  ) => {
     let path = `DepartmentDetails/${id}`;
-    navigate(path, { state: { departmentID: id } });
+    navigate(path, {
+      state: { Name: name, departmentID: id, departmentDesc: description },
+    });
   };
   const [department, setdepartment] = useState([
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
-    { departmentName: "Departm ilfouleni ", departmentID: 1 },
+    { departmentName: "Department", departmentID: "1", departmentDesc: "something" },
+    { departmentName: "Department", departmentID: "1", departmentDesc: "something" },
+    { departmentName: "Department", departmentID:  "1", departmentDesc: "something" },
+    { departmentName: "Department", departmentID:  "1", departmentDesc: "something" },
+    { departmentName: "Department", departmentID:  "1", departmentDesc: "something" },
+    { departmentName: "Department", departmentID:  "1", departmentDesc: "something" },
+    { departmentName: "Department", departmentID:  "1", departmentDesc: "something" },
+    { departmentName: "Department", departmentID:  "1", departmentDesc: "something" },
+    { departmentName: "Department", departmentID:  "1", departmentDesc: "something" },
+    { departmentName: "Department", departmentID:  "1", departmentDesc: "something" },
+    { departmentName: "Department", departmentID:  "1", departmentDesc: "something" },
+    { departmentName: "Department", departmentID:  "1", departmentDesc: "something" },
+    { departmentName: "Department", departmentID:  "1", departmentDesc: "something" },
+    { departmentName: "Department", departmentID:  "1", departmentDesc: "something" },
   ]);
   useEffect(() => {
     axios
-      .get("url")
+      .get("http://localhost:8080/api/department")
       .then((response) => {
         console.log(response.data);
-        const dep = {
-          departmentName: response.data.Name,
-          departmentID: response.data.ID,
-        };
-        let getDepartment = [...department, dep];
-        setdepartment(getDepartment);
+        const departmentData = response.data.data.map(
+          ({ name, _id, description }: any) => {
+            return {
+              departmentName: name,
+              departmentID: _id,
+              departmentDesc: description,
+            };
+          }
+        );
+        // setdepartment(departmentData);
+        setdepartment((prev) => [...prev, ...departmentData]);
       })
       .catch((error) => console.log(error));
   }, []);
   return (
     <div>
-      <h1 className="ml-[52vw] mt-[1vw] font-bold">Departments</h1>
+      <h1 className="ml-[52vw] mt-[1vw] text-xl font-bold">Departments</h1>
 
       <div className="border-2 h-[34vw]  border-slate-200	 mt-[2vw] ml-[17vw] mr-[3vw]  overflow-auto	">
-        <body className="">
+        <div className="">
           <div className="h-[30vw] items-center justify-left">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-5">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-5 ">
               {department.map((department, index) => (
                 <div
-                  className="bg-slate-200 text-slate-700 text-lg font-bold text-center p-10 rounded-lg hover:bg-slate-400"
+                key={index}
+                  className="bg-slate-200 text-slate-700 Ellipsis font-bold text-center p-7 rounded-lg hover:bg-slate-400"
                   onClick={() =>
-                    handleDepartmentClick(department.departmentID)
+                    handleDepartmentClick(
+                      department.departmentName,
+                      department.departmentID,
+                      department.departmentDesc
+                    )
                   }
                 >
                   {department.departmentName}
@@ -68,11 +75,13 @@ const DepartmentsComp = () => {
               ))}
             </div>
           </div>
-        </body>
+        </div>
       </div>
 
       <footer className="mt-8  ml-[18vw] font-thin text-sm">
-        <span dangerouslySetInnerHTML={{ __html: "&copy; hello" }} />
+        <span
+          dangerouslySetInnerHTML={{ __html: "&copy; This is Yassine's work" }}
+        />
       </footer>
     </div>
   );

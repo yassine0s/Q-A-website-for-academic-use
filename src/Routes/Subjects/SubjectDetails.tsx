@@ -1,16 +1,17 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import MainBody from "../../component/MainBody";
 
 const SubjectDetails = () => {
-  const { id } = useParams();
 
+  const { state }:any = useLocation();
+  console.log(state)
   return (
     <div>
       <MainBody></MainBody>
       <div className="border-2 h-[40vw]  border-slate-800	 mt-[2vw] ml-[17vw] mr-[3vw]  ">
         <div className="m-5">
-          <h1 className="font-bold text-xl">Subject Name</h1>
+          <h1 className="font-bold text-xl"> {state.Name}</h1>
           <br></br>
           <div className="ml-10">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione

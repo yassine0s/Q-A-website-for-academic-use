@@ -1,0 +1,57 @@
+Date : 2022-05-20 18:55:55
+Directory : c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src
+Total : 25 files,  1336 codes, 21 comments, 118 blanks, all 1475 lines
+
+Languages
++------------------+------------+------------+------------+------------+------------+
+| language         | files      | code       | comment    | blank      | total      |
++------------------+------------+------------+------------+------------+------------+
+| TypeScript React |         21 |      1,319 |         16 |        112 |      1,447 |
+| TypeScript       |          3 |         14 |          5 |          5 |         24 |
+| CSS              |          1 |          3 |          0 |          1 |          4 |
++------------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                   | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                      |         25 |      1,336 |         21 |        118 |      1,475 |
+| Routes                                                                                                                 |         10 |        611 |          4 |         53 |        668 |
+| Routes\Answers                                                                                                         |          1 |        127 |          0 |         10 |        137 |
+| Routes\Departments                                                                                                     |          2 |         53 |          0 |          4 |         57 |
+| Routes\Subjects                                                                                                        |          2 |         92 |          1 |          9 |        102 |
+| Routes\Teachers                                                                                                        |          2 |        136 |          1 |         14 |        151 |
+| component                                                                                                              |          7 |        643 |          9 |         46 |        698 |
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| filename                                                                                                               | language         | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\App.test.tsx                             | TypeScript React |          8 |          0 |          2 |         10 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\App.tsx                                  | TypeScript React |         31 |          0 |          5 |         36 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\Layout.tsx                               | TypeScript React |         14 |          0 |          3 |         17 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\Routes\Answers\Answers.tsx               | TypeScript React |        127 |          0 |         10 |        137 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\Routes\AskQuestionPage.tsx               | TypeScript React |         89 |          0 |          8 |         97 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\Routes\Departments\DepartmentDetails.tsx | TypeScript React |         41 |          0 |          3 |         44 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\Routes\Departments\Departments.tsx       | TypeScript React |         12 |          0 |          1 |         13 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\Routes\MainPage.tsx                      | TypeScript React |         35 |          1 |          3 |         39 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\Routes\Subjects\SubjectDetails.tsx       | TypeScript React |         28 |          0 |          4 |         32 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\Routes\Subjects\Subjects.tsx             | TypeScript React |         64 |          1 |          5 |         70 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\Routes\Teachers\TeacherDetails.tsx       | TypeScript React |         76 |          0 |          4 |         80 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\Routes\Teachers\Teachers.tsx             | TypeScript React |         60 |          1 |         10 |         71 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\Routes\UserDetails.tsx                   | TypeScript React |         79 |          1 |          5 |         85 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\component\DepartmDropdown.tsx            | TypeScript React |         97 |          3 |         15 |        115 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\component\DepartmentsComp.tsx            | TypeScript React |         84 |          1 |          6 |         91 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\component\MainBody.tsx                   | TypeScript React |         13 |          0 |          2 |         15 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\component\Question.tsx                   | TypeScript React |        109 |          1 |          7 |        117 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\component\Sidebar.tsx                    | TypeScript React |        132 |          0 |          4 |        136 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\component\SubjDropdown.tsx               | TypeScript React |         96 |          3 |          5 |        104 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\component\UpperNavbar.tsx                | TypeScript React |        112 |          1 |          7 |        120 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\index.css                                | CSS              |          3 |          0 |          1 |          4 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\index.tsx                                | TypeScript React |         12 |          3 |          3 |         18 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\react-app-env.d.ts                       | TypeScript       |          0 |          1 |          1 |          2 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\reportWebVitals.ts                       | TypeScript       |         13 |          0 |          3 |         16 |
+| c:\Users\yassi\OneDrive\Bureau\Project lab\QandA-website-for-academic-use\src\setupTests.ts                            | TypeScript       |          1 |          4 |          1 |          6 |
+| Total                                                                                                                  |                  |      1,336 |         21 |        118 |      1,475 |
++------------------------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+

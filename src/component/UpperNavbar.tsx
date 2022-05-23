@@ -19,7 +19,7 @@ const UpperNavbar = () => {
               <div className="flex-1 flex  sm:items-stretch justify-items-start -ml-8 mt-0.2 ">
                 <div>
                   <Link to={"/"}>
-                    <img src="https://www.bme.hu/sites/all/themes/foo/logo.png" />
+                    <img alt='bme logo' src="https://www.bme.hu/sites/all/themes/foo/logo.png" />
                   </Link>
                 </div>
                 <div className="p-2 ml-[10vw] mt-0">
@@ -38,6 +38,7 @@ const UpperNavbar = () => {
                       </svg>
                     </div>
                     <input
+                    title="text"
                       type="text"
                       id="table-search"
                       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-80 pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
